@@ -12,6 +12,8 @@ body {
     background: url('/img/360_F_721874463_Gx3Y5bshhB23DlVJxR3I5B2sBuZCcAiD.jpg') no-repeat;
     background-size: cover;
     background-position: center;
+    margin: 0;
+    
 }
 
 .header {
