@@ -158,15 +158,6 @@ body {
 
 
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #7096bd; /* Color de fondo */
-
-
-}
-
-    
 .carousel-inner {
     overflow: hidden; /* Oculta las imágenes que no están activas */
 }
@@ -176,9 +167,9 @@ body {
 }
 
 .carousel img {
-    max-height: 100%; /* Asegura que la imagen no sobresalga del contenedor */
-    max-width: 100%; /* Asegura que la imagen no sobresalga del contenedor */
-    object-fit: contain; /* Mantiene la relación de aspecto */
+    height: 100%; /* Asegura que la imagen ocupe toda la altura */
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+    object-fit: cover; /* Hace que la imagen cubra todo el contenedor */
     display: block; /* Asegura que las imágenes se comporten correctamente */
     margin: auto; /* Centra la imagen horizontalmente */
 }
@@ -193,4 +184,5 @@ body {
 .carousel-container {
     margin-top: 150px; /* Espacio superior para el carrusel */
 }
+
     
