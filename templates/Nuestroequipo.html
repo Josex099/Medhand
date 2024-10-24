@@ -36,7 +36,9 @@
                     <img src="/img/1.png" alt="Imagen de la empresa" class="img-fluid rounded">
                 </div>
                 <div class="col-lg-6">
-                    <h2 class="mb-4">Sobre Nosotros</h2>
+                    <div class="section-header d-flex align-items-center justify-content-center"> <!-- Se añaden clases para usar flexbox -->
+                        <h2 class="mb-4">Sobre Nosotros</h2>
+                    </div>
                     <p>
                         En <strong>MedHand</strong>, nos dedicamos a proporcionar soluciones digitales innovadoras que ayudan a nuestros clientes a gestionar su salud de manera más eficiente y efectiva. Nuestra empresa nació con la misión de revolucionar la industria de la salud a través de la tecnología, facilitando la vida de nuestros usuarios.
                     </p>
@@ -55,27 +57,42 @@
         body {
             padding-top: 170px;
         }
+    
         #sobre-nosotros {
-            
             padding: 60px 0;
         }
     
-        #sobre-nosotros h2 {
-            color: #00BFFF; /* Color azul que coincide con el tema de la empresa */
-            font-weight: bold;
+        /* Estilos para el encabezado "Sobre Nosotros" */
+        .section-header {
+            background-color: #007bff; /* Color de fondo similar al encabezado de los planes */
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            display: flex; /* Activar flexbox */
+            justify-content: center; /* Centrar horizontalmente */
+            align-items: center; /* Centrar verticalmente */
+            height: 100px; /* Ajustar la altura para que siempre tenga espacio adecuado */
+            border: 2px solid #0056b3;
         }
     
+        .section-header h2 {
+            margin: 0;
+            font-weight: bold;
+            color: white;
+            text-align: center; /* Asegurar que el texto esté centrado */
+        }
+    
+        /* Estilos para los párrafos de texto */
         #sobre-nosotros p {
-            
-            padding: 10px; /* Espaciado interno */
-            color: #333; /* Color de texto oscuro para mejorar la legibilidad */
+            padding: 10px;
+            color: #333;
             line-height: 1.6;
         }
     
         #sobre-nosotros img {
             max-width: 100%;
             height: auto;
-            border-radius: 10px; /* Bordes redondeados para la imagen */
+            border-radius: 10px;
         }
     
         @media (max-width: 768px) {
@@ -84,6 +101,8 @@
             }
         }
     </style>
+    
+    
     
 
     
