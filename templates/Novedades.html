@@ -12,7 +12,7 @@
 
 <body>
     <header class="header">
-        <a href="/index.html" class="logo">    <span>Med</span><span style="color: white;" >Hand</span></a>
+        <a href="/index.html" class="logo"><span>Med</span><span style="color: white;">Hand</span></a>
 
         <input type="checkbox" id="check" aria-label="Toggle navigation">
         <label for="check" class="icons">
@@ -21,18 +21,17 @@
         </label>
 
         <nav class="navbar">
-            <a href="/index.html" style="--i:0;">Inicio</a>
-            <a href="/templates/Novedades.html" style="--i:1;">Novedades</a>
-            <a href="/templates/Planes.html" style="--i:2;">Planes</a>
-            <a href="/templates/Nuestroequipo.html" style="--i:3;">Nuestro equipo</a>
+            <a href="/index.html">Inicio</a>
+            <a href="/templates/Novedades.html">Novedades</a>
+            <a href="/templates/Planes.html">Planes</a>
+            <a href="/templates/Nuestroequipo.html">Nuestro equipo</a>
         </nav>
     </header>
-  <body>
 
-     <!-- Sección de Novedades -->
-     <section class="hero-section text-center">
+    <!-- Sección de Novedades -->
+    <section class="hero-section text-center text-white d-flex flex-column align-items-center justify-content-center">
         <div class="container">
-            <h1 class="display-4">Novedades</h1>
+            <h1 class="display-5 fw-bold">Novedades</h1>
             <p class="lead">¡Descubre las últimas actualizaciones y avances de nuestro pastillero digital inteligente!</p>
         </div>
     </section>
@@ -40,48 +39,54 @@
     <!-- Descripción del Producto -->
     <section class="container my-5">
         <div class="row align-items-center">
-            <div class="col-md-6">
-                <img src="/img/pastillero intel.jpeg" alt="Pastillero Digital Inteligente" class="feature-image">
+            <div class="col-lg-6">
+                <img src="/img/pastillero intel.jpeg" alt="Pastillero Digital Inteligente" class="img-fluid rounded shadow-sm">
             </div>
-            <div class="col-md-6">
-                <div class="section-header">
-                    <h2>¿Qué es el pastillero digital inteligente?</h2>
-                </div>
-                <p>Nuestro pastillero digital inteligente está diseñado para facilitar la gestión de medicamentos, ofreciendo recordatorios automáticos, control remoto desde una aplicación móvil, y acceso compartido con familiares.</p>
-                <p>Con estas innovaciones, estamos transformando la forma en que las personas manejan su salud diaria.</p>
+            <div class="col-lg-6 mt-4 mt-lg-0">
+                <h2 class="fw-bold text-primary mb-3">¿Qué es el pastillero digital inteligente?</h2>
+                <p>Este pastillero digital está diseñado para gestionar medicamentos con recordatorios automáticos, control remoto desde una app, y acceso compartido con familiares. ¡Transforma la gestión de tu salud!</p>
             </div>
         </div>
     </section>
     
     <!-- Nuevas Funcionalidades -->
     <section class="container my-5">
-        <div class="section-header">
-            <h2>Nuevas Funcionalidades</h2>
+        <h2 class="fw-bold text-primary text-center mb-4">Nuevas Funcionalidades</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="p-4 border rounded bg-light shadow-sm">
+                    <h4 class="fw-bold">Almacenamiento en la Nube</h4>
+                    <p>Respalda todos los recordatorios y configuraciones de manera segura.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4 mt-md-0">
+                <div class="p-4 border rounded bg-light shadow-sm">
+                    <h4 class="fw-bold">Acceso Compartido</h4>
+                    <p>Comparte el acceso con familiares para una mayor tranquilidad.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4 mt-md-0">
+                <div class="p-4 border rounded bg-light shadow-sm">
+                    <h4 class="fw-bold">Actualizaciones Automáticas</h4>
+                    <p>Actualizaciones regulares para mejorar la seguridad y funcionalidad.</p>
+                </div>
+            </div>
         </div>
-        <ul>
-            <li>Almacenamiento en la nube para respaldar todos los recordatorios y configuraciones.</li>
-            <li>Posibilidad de compartir el acceso con familiares.</li>
-            <li>Actualizaciones automáticas del software para mejorar la seguridad y funcionalidad.</li>
-        </ul>
     </section>
     
     <!-- Beneficios para el Usuario -->
     <section class="container my-5">
-        <div class="section-header">
-            <h2>Beneficios para los Usuarios</h2>
-        </div>
-        <p>Las nuevas funcionalidades del pastillero digital permiten una gestión más eficiente de los medicamentos y brindan tranquilidad a los familiares. Gracias a la opción de compartir acceso, ahora es más fácil monitorear la toma de medicamentos.</p>
+        <h2 class="fw-bold text-primary text-center mb-4">Beneficios para los Usuarios</h2>
+        <p class="text-center">Las nuevas funcionalidades del pastillero digital permiten una gestión más eficiente de los medicamentos y brindan tranquilidad a los familiares.</p>
     </section>
     
-    <!-- Testimonios -->
+    <!-- Call to Action -->
     <section class="container my-5 text-center">
-        <div class="section-header d-inline-block"> <!-- Se asegura que el contenedor abarque el contenido -->
-            <h2>¡Prueba nuestro Pastillero Inteligente Hoy!</h2>
-        </div>
-        <p>Obtén acceso a todas las funciones innovadoras que ofrecemos y transforma la forma en que gestionas tu salud.</p>
+        <h2 class="fw-bold text-primary mb-3">¡Prueba nuestro Pastillero Inteligente Hoy!</h2>
+        <p>Accede a todas nuestras funciones innovadoras y transforma la gestión de tu salud.</p>
         <a href="/templates/Planes.html" class="btn btn-primary btn-lg">Ordenar Ahora</a>
     </section>
-    
+
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -89,82 +94,40 @@
             color: #333;
             padding-top: 100px;
         }
-    
+
         /* Fondo de la sección principal */
         .hero-section {
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('ruta_a_tu_imagen_fondo.jpg') center/cover no-repeat;
-            color: white;
-            padding: 80px 0;
-            text-align: center;
+            height: 300px;
         }
-    
-        /* Estilos para los encabezados de secciones */
-        .section-header {
-            background-color: #007bff; /* Fondo azul */
-            padding: 20px;
+
+        .text-primary {
+            color: #007bff !important;
+        }
+
+        .container h2 {
+            font-size: 2rem;
+        }
+
+        .rounded {
             border-radius: 10px;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100px;
-            margin-bottom: 30px; /* Separación con el contenido */
-            border: 2px solid #0056b3;
         }
-    
-        .section-header h2 {
-            margin: 0;
-            font-weight: bold;
-            color: white;
-            text-align: center;
+
+        .shadow-sm {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-    
-        /* Sección con cajas de fondo transparente */
-        .section-content {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 40px;
-        }
-    
-        h2 {
-            font-size: 2.5rem;
-            color: #007bff;
-            margin-bottom: 20px;
-        }
-    
-        p, li {
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
-    
-        .feature-image {
-            max-width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-    
+
         .btn-primary {
             background-color: #0052aa;
             border: none;
-            padding: 15px 30px;
-            font-size: 1.25rem;
-            border-radius: 50px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            border-radius: 8px;
             transition: all 0.3s ease;
         }
-    
+
         .btn-primary:hover {
-            background-color: #1f5896;
-            transform: translateY(-5px);
-        }
-    
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
+            background-color: #003f8c;
         }
     </style>
     
