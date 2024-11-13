@@ -9,11 +9,8 @@
 
 body {
     min-height: 100vh;
-    background: url('/img/360_F_721874463_Gx3Y5bshhB23DlVJxR3I5B2sBuZCcAiD.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: radial-gradient(circle, #e0f7fa, #81d4fa); /* Blanco a azul claro */
     margin: 0;
-    background-repeat: repeat
     
 }
 
