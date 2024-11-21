@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Medhand</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <a href="/index.html" class="logo"><span>Med</span><span style="color: white;">Hand</span></a>
+
+        <input type="checkbox" id="check" aria-label="Toggle navigation">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="/index.html">Inicio</a>
+            <a href="/templates/Productos.html">Productos</a>
+            <a href="/templates/Planes.html">Planes</a>
+            <a href="/templates/Nuestroequipo.html">Nuestro equipo</a>
+        </nav>
+    </header>
+
+    <!-- Sección de Novedades -->
+    <section class="novedades-section py-5" style="margin-top: 100px;">
+        <div class="container text-center">
+            <h2 class="mb-4">¡Conoce el Pastillero Digital Inteligente!</h2>
+            <p class="lead">
+                En <strong>MedHand</strong>, nuestro <strong>Pastillero Digital Inteligente</strong> es mucho más que un simple dispositivo para almacenar medicamentos. Gracias a su integración con la aplicación móvil, este innovador producto te permite:
+            </p>
+            
+            <!-- Sección con imagen y texto -->
+            <div class="row my-5">
+                <div class="col-md-6">
+                    <img src="/img/gestion_de_dosis.png" alt="Gestión de Dosis" class="img-fluid rounded shadow mb-4">
+                </div>
+                <div class="col-md-6">
+                    <h3>Gestión de Dosis</h3>
+                    <p>Programa los horarios de toma y recibe alertas en tu smartphone para asegurarte de no olvidar ninguna dosis.</p>
+                </div>
+            </div>
+    
+            <!-- Sección con imagen y texto -->
+            <div class="row my-5">
+                <div class="col-md-6 order-md-2">
+                    <img src="/img/controlpastillas.png" alt="Control de Pastillas" class="img-fluid rounded shadow mb-4">
+                </div>
+                <div class="col-md-6">
+                    <h3>Control Total de tus Pastillas</h3>
+                    <p>La app te informa sobre la cantidad exacta de pastillas en cada compartimiento, ayudándote a mantener un seguimiento preciso.</p>
+                </div>
+            </div>
+    
+            <!-- Sección con imagen y texto -->
+            <div class="row my-5">
+                <div class="col-md-6">
+                    <img src="/img/AYUDA_MEDICINA.jpg" alt="Compartir con Familia" class="img-fluid rounded shadow mb-4">
+                </div>
+                <div class="col-md-6">
+                    <h3>Comparte el Control con tu Familia</h3>
+                    <p>Puedes compartir el acceso a la app con familiares, para que puedan ayudarte a monitorear y gestionar tus medicaciones a distancia.</p>
+                </div>
+            </div>
+    
+            <p class="lead">
+                Además, <strong>¡Ya estamos en Google Play Store y App Store!</strong> Puedes descargar nuestra app para comenzar a disfrutar de todas estas ventajas y más, directamente desde tu dispositivo móvil.
+            </p>
+            <p class="lead font-weight-bold">
+                ¡No más preocupaciones por los horarios de tus medicamentos! Con nuestro pastillero digital, la salud está en tus manos y en las de tus seres queridos.
+            </p>
+    
+            <!-- Botones para descarga -->
+            <!-- Botón Google Play con Icono -->
+<!-- Botón Google Play con Icono y se abre en nueva pestaña -->
+<a href="https://play.google.com/store/apps" class="btn btn-primary btn-lg mt-4" target="_blank">
+    <i class="fab fa-google-play mr-2"></i> Descargar en Google Play
+</a>
+
+<!-- Botón App Store con Icono y se abre en nueva pestaña -->
+<a href="https://apps.apple.com/us/app" class="btn btn-secondary btn-lg mt-4" target="_blank">
+    <i class="fab fa-apple mr-2"></i> Descargar en App Store
+</a>
+
+
+        </div>
+    </section>
+    
+    <style>
+        .novedades-section {
+            
+            color: #333;
+            margin-top: 100px; /* Esto mueve la sección hacia abajo */
+        }
+    
+        .novedades-section h2 {
+            color: #007bff; /* Azul claro */
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    
+        .novedades-section .lead {
+            font-size: 1.25rem;
+            line-height: 1.6;
+        }
+    
+        .novedades-section .btn {
+            margin-top: 10px;
+            padding: 15px 30px;
+            font-size: 1.25rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+    
+        .novedades-section .btn-primary {
+            background-color: #0052aa;
+            border: none;
+        }
+    
+        .novedades-section .btn-primary:hover {
+            background-color: #1f5896;
+        }
+    
+        .novedades-section .btn-secondary {
+            background-color: #333;
+            border: none;
+        }
+    
+        .novedades-section .btn-secondary:hover {
+            background-color: #444;
+        }
+    
+        .novedades-section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+    
+        .novedades-section ul li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+    
+        .novedades-section ul li strong {
+            color: #007bff;
+        }
+    
+        /* Estilo para las imágenes */
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+    
+        .rounded {
+            border-radius: 10px;
+        }
+    
+        .shadow {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        /* Ajuste para mejorar la experiencia en dispositivos móviles */
+        @media (max-width: 768px) {
+            .novedades-section .row {
+                text-align: left;
+            }
+    
+            .novedades-section h3 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+<!-- CONTACTANOS-->
+
+<footer id="contacto" class="py-5 bg-dark text-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Contáctanos</h2>
+        
+        <div class="row mb-4">
+            <div class="col-md-4 text-center">
+                <p><strong>Teléfono:</strong> +123 456 7890</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <p><strong>Email:</strong> medhandpas@gmail.com</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <p><strong>Dirección:</strong> Cl. 58 #55 - 66, Nte. Centro Historico, Barranquilla, Atlántico</p>
+            </div>
+        </div>
+        
+        <div class="text-center mb-4">
+            <h3 class="mb-3">Síguenos en nuestras redes sociales:</h3>
+            <div class="d-flex justify-content-center">
+                <a href="https://www.facebook.com/profile.php?id=61567853842738" target="_blank" class="btn btn-outline-light mx-2">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="https://x.com/MedHandPas" target="_blank" class="btn btn-outline-light mx-2">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+                <a href="https://www.instagram.com/medhandpas/?hl=es" target="_blank" class="btn btn-outline-light mx-2">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </div>
+        </div>
+
+        <!-- Botones de descarga de la App Store y Google Play -->
+        <div class="text-center mb-4">
+            <h3 class="mb-3">Descarga nuestra app:</h3>
+            <div class="d-flex justify-content-center">
+                <a href="https://www.figma.com/design/BTs2sf4EBHAol5X18PI1bL/MedHand-app-proto?node-id=0-1" target="_blank" class="btn btn-outline-light mx-2">
+                    <i class="fab fa-google-play"></i> Google Play
+                </a>
+                <a href="https://www.figma.com/design/BTs2sf4EBHAol5X18PI1bL/MedHand-app-proto?node-id=0-1" target="_blank" class="btn btn-outline-light mx-2">
+                    <i class="fab fa-apple"></i> App Store
+                </a>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+        </div>
+    </div>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</footer>
+
+
+
+<style>
+    html, body {
+height: 100%;
+}
+
+body {
+display: flex;
+flex-direction: column;
+}
+
+footer {
+    margin-top: 100px; /* Ajusta este valor según lo que necesites */
+}
+
+
+</style>
+
+<!-- CONTACTANOS-->
