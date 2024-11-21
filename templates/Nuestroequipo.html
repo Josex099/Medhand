@@ -29,78 +29,130 @@
     </header>
   <body>
 
-    <section id="sobre-nosotros" class="py-5">
+    <style>
+        /* Estilos específicos de la sección Team */
+        .team-section {
+            background: radial-gradient(circle, #e0f7fa, #81d4fa);
+            padding: 150px 0;
+        }
+    
+        .team-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #002766;
+        }
+    
+        .team-subtitle {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #fbb034;
+            margin-bottom: 30px;
+        }
+    
+        .card {
+            border: none;
+            max-width: 300px; /* Ancho máximo para dispositivos grandes */
+            margin: 0 auto; /* Centra las tarjetas */
+        }
+    
+        .card img {
+            max-height: 300px; /* Limitar la altura de las imágenes */
+            object-fit: cover; /* Recorta la imagen sin deformarla */
+        }
+    
+        @media (max-width: 768px) {
+            .card {
+                max-width: 200px; /* Tamaño más pequeño en dispositivos móviles */
+            }
+        }
+    
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #002766;
+        }
+    
+        .card-text {
+            font-size: 1rem;
+            color: #fbb034;
+        }
+    
+        /* Asegura que no haya interferencias con otras secciones */
+        .container {
+            max-width: 1140px; /* Evita que las secciones sean más anchas de lo necesario */
+        }
+    </style>
+    
+    <section class="team-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <img src="/img/1.png" alt="Imagen de la empresa" class="img-fluid rounded">
-                </div>
-                <div class="col-lg-6">
-                    <div class="section-header d-flex align-items-center justify-content-center"> <!-- Se añaden clases para usar flexbox -->
-                        <h2 class="mb-4">Sobre Nosotros</h2>
+            <h2 class="team-title">TEAM</h2>
+            <p class="team-subtitle">EQUIPO</p>
+            <div class="row gy-4">
+                <!-- Persona 1 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card text-center">
+                        <img src="/img/prueba180x180.png" class="card-img-top" alt="Integrante 1">
+                        <div class="card-body">
+                            <h5 class="card-title">El jose</h5>
+                            <p class="card-text">Rol 1</p>
+                        </div>
                     </div>
-                    <p>
-                        En <strong>MedHand</strong>, nos dedicamos a proporcionar soluciones digitales innovadoras que ayudan a nuestros clientes a gestionar su salud de manera más eficiente y efectiva. Nuestra empresa nació con la misión de revolucionar la industria de la salud a través de la tecnología, facilitando la vida de nuestros usuarios.
-                    </p>
-                    <p>
-                        A lo largo de los años, hemos desarrollado productos y servicios que no solo mejoran la calidad de vida, sino que también ofrecen un soporte continuo y confiable. Creemos firmemente en el poder de la tecnología para transformar la salud y el bienestar de las personas.
-                    </p>
-                    <p>
-                        Nuestro equipo está compuesto por profesionales apasionados que trabajan día a día para cumplir con los más altos estándares de calidad y servicio. En MedHand, nuestro compromiso es siempre estar a la vanguardia y brindar soluciones efectivas para nuestros clientes.
-                    </p>
+                </div>
+                <!-- Persona 2 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card text-center">
+                        <img src="/img/la perra 194.jpg" class="card-img-top" alt="Integrante 2">
+                        <div class="card-body">
+                            <h5 class="card-title">El wescol</h5>
+                            <p class="card-text">Rol 2</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Persona 3 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card text-center">
+                        <img src="/img/prueba500x500.jpg" class="card-img-top" alt="Integrante 3">
+                        <div class="card-body">
+                            <h5 class="card-title">El sebastian</h5>
+                            <p class="card-text">Rol 3</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Persona 4 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card text-center">
+                        <img src="/img/gordo 1920.jpg" class="card-img-top" alt="Integrante 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Nando</h5>
+                            <p class="card-text">Rol 4</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Persona 5 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card text-center">
+                        <img src="/img/vegetta estirado.jpg" class="card-img-top" alt="Integrante 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Jean</h5>
+                            <p class="card-text">Rol 5</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Persona 6 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card text-center">
+                        <img src="/img/lil 600x600.jpg" class="card-img-top" alt="Integrante 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Jose 2 (yo)</h5>
+                            <p class="card-text">Rol 6</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     
-    <style>
-        body {
-            padding-top: 170px;
-        }
-    
-        #sobre-nosotros {
-            padding: 60px 0;
-        }
-    
-        /* Estilos para el encabezado "Sobre Nosotros" */
-        .section-header {
-            background-color: #007bff; /* Color de fondo similar al encabezado de los planes */
-            padding: 20px;
-            border-radius: 10px;
-            color: white;
-            display: flex; /* Activar flexbox */
-            justify-content: center; /* Centrar horizontalmente */
-            align-items: center; /* Centrar verticalmente */
-            height: 100px; /* Ajustar la altura para que siempre tenga espacio adecuado */
-            border: 2px solid #0056b3;
-        }
-    
-        .section-header h2 {
-            margin: 0;
-            font-weight: bold;
-            color: white;
-            text-align: center; /* Asegurar que el texto esté centrado */
-        }
-    
-        /* Estilos para los párrafos de texto */
-        #sobre-nosotros p {
-            padding: 10px;
-            color: #333;
-            line-height: 1.6;
-        }
-    
-        #sobre-nosotros img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-    
-        @media (max-width: 768px) {
-            #sobre-nosotros .col-lg-6 {
-                margin-bottom: 30px;
-            }
-        }
-    </style>
     
     
     
@@ -162,18 +214,20 @@
 
     <style>
         html, body {
-    height: 100%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-footer {
-    margin-top: 190px;
-}
-
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+        }
+        footer {
+            margin-top: 100x;
+        }
     </style>
 
 <!-- CONTACTANOS-->    
